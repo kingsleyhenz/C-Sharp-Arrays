@@ -13,7 +13,6 @@
             {
                 Console.WriteLine(names[i]);
             }
-           */
             int[] age = new int[5];
             age[0] = 16;
             age[1] = 23;
@@ -27,6 +26,25 @@
 
                 age[i] = Convert.ToInt32(Console.ReadLine());
                 Console.WriteLine(age[i]);
+            }
+           */
+
+            Console.WriteLine("Enter Number Of Students");
+            int studnum = Convert.ToInt32(Console.ReadLine());
+
+            int[] students = new int[studnum];
+            int count = 0;
+
+            Console.WriteLine("Enter Students Grade");
+            for (int i = 0; i < students.Length; i++)
+            {
+                students[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            Console.WriteLine("These are the grades");
+            for (int i = 0; i < students.Length; i++)
+            {
+                count++;
+                Console.WriteLine(count + ":" + " " + students[i]);
             }
 
         }
